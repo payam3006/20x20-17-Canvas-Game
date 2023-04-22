@@ -1,0 +1,65 @@
+body {
+  background-color: skyblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+#canvas {
+  background-color: white;
+  width: 50vw;
+  height: 70vh;
+  border-radius: 10px;
+}
+#score {
+  color: blue;
+  font-size: large;
+  position: relative;
+  width: 50vw;
+}
+#score p {
+  margin: 0;
+  position: absolute;
+  width: 50vw;
+  right: 5px;
+  top: 3px;
+  text-align: right;
+}
+
+.rules {
+  background-color: #2a2a2a;
+  position: absolute;
+  width: 20vw;
+  height: 100vh;
+  padding: 5px;
+  /* text-align: justify; */
+  transition: 0.5s;
+}
+
+.openRules {
+  left: 0;
+}
+.closeRules {
+  left: -30vw;
+}
+
+.btn {
+  padding: 7px 10px;
+  background-color: black;
+  border-radius: 3px;
+  cursor: pointer;
+  text-align: center;
+}
+.showRules {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.close {
+  max-width: 70px;
+}
