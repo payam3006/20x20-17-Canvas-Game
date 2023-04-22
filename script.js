@@ -259,3 +259,20 @@ function update() {
 }
 
 update();
+
+//////////////////////handle mobile touch///////////////////////
+
+document.addEventListener("DOMContentLoaded", startup);
+
+function startup() {
+  const el = document.getElementById("canvas");
+  // el.addEventListener("touchstart", handleStart);
+  // el.addEventListener("touchend", handleEnd);
+  // el.addEventListener("touchcancel", handleCancel);
+  el.addEventListener("touchmove", handleMove);
+  q("Initialized.");
+}
+
+function handleMove(evt) {
+  block.x = evt.touches[0].clientX;
+}
